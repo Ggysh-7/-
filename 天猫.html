@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <charsetmeta charset="utf-8"></charsetmeta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>天猫tmall.con--理想生活上天猫</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" >
+    <link href="./css/tianmao.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link href="./iconfont/iconfont.css" rel="stylesheet" type="text/css"/>
+    <!-- <script src="./tianmao.js" type="text/javascript"></script> -->
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/template-web.js"></script>
+</head>
+<body>
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li class="iconfont" id="tmallhome">&#x100a6;<a href="#">天猫首页</a></li>
+                    <li>喵，欢迎来天猫</li>
+                    <li><a href="./天猫登录.html">请登录</a> &nbsp; <a href="#">免费注册</a></li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li class="arrow"><a href="#">我的淘宝</a></li>
+                    <li class="iconfont">&#xf84a;<a href="#">购物车</a></li>
+                    <li class="arrow"><a href="#">收藏夹</a></li>
+                    <li></li>
+                    <li class="iconfont">&#xf816;<a href="#">手机版</a></li>
+                    <li><a href="#">淘宝网</a></li>
+                    <li><a href="#">网页无障碍</a></li>
+                    <li class="arrow"><a href="#">商家支付</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hotsale">
+        <div class="w">
+            <div class="products"><a href=""><img src="./upload/hotsale1.png" alt="" ></a></div>
+            <div class="products"><a href=""><img src="./upload/hotsale2.png" alt="" ></a></div>
+            <div class="products"><a href=""><img src="./upload/hotsale3.png" alt="" ></a></div>
+            <div class="products"><a href=""><img src="./upload/hotsale4.png" alt="" ></a></div>
+            <div class="products"><a href=""><img src="./upload/hotsale5.png" alt="" ></a></div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="w">
+            <div class="logo">
+                <h1><a href="天猫.html" title="天猫购物商城">天猫购物商城</a></h1>
+            </div>
+            <div class="search-box">
+                <input type="text"  placeholder="搜索 天猫 商品/品牌/店铺" class="ipt" id="ipt">
+                <button class="btnSearch">搜索</button>
+                <!-- 搜索建议列表 -->
+                <div id="suggest-list" class="suggest-list"></div>
+            </div>
+        </div>
+    </div>
+    <div class="Hometop">
+        <div class="w">
+            <div class="Hometopleft">
+                <h3>主题市场</h3>
+            </div>
+            <div class="Hometopright">
+                <ul>
+                    <li><a href="https://chaoshi.tmall.com/"><img src="./images/tmallshop.png" alt="" style="width: 100px; height: 30px; margin-top: 1px;"></a></li>
+                    <li><a href="https://www.tmall.hk/"><img src="./images/tmallinternational.png" alt="" style="width: 100px; height: 30px; margin-top: 1px;"></a></li>
+                    <li><a href="https://vip.tmall.com/vip/index.htm">天猫会员</a></li>
+                    <li><a href="#">喵鲜生</a></li>
+                    <li><a href="#">医药馆</a></li>
+                    <li><a href="#">魅力惠</a></li>
+                    <li><a href="#">飞猪旅行</a></li>
+                    <li><a href="#">苏宁易购</a></li>
+                    <li><a href="#">天猫内容</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="Homebody">
+        <div class="w">
+            <div class="MainNav">
+                <div class="classify">
+                    <div class="category">
+                        <a href="">女装</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">内衣</a>
+                    </div>
+                    <div class="category">
+                        <a href="">男装</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">户外运动</a>
+                    </div>
+                    <div class="category">
+                        <a href="">女鞋</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">男鞋</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">箱包</a>
+                    </div>
+                    <div class="category">
+                        <a href="">美妆</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">个人护理</a>
+                    </div>
+                    <div class="category">
+                        <a href="">腕表</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">眼镜</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">珠宝饰品</a>
+                    </div>
+                    <div class="category">
+                        <a href="">手机</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">数码</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">电脑办公</a>
+                    </div>
+                    <div class="category">
+                        <a href="">母婴玩具</a>
+                    </div>
+                    <div class="category">
+                        <a href="">零食</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">茶酒</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">进口食品</a>
+                    </div>
+                    <div class="category">
+                        <a href="">生鲜水果</a>
+                    </div>
+                    <div class="category">
+                        <a href="">大家电</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">生活电器</a>
+                    </div>
+                    <div class="category">
+                        <a href="">家具</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">灯具</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">卫浴</a>
+                    </div>
+                    <div class="category">
+                        <a href="">汽车</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">配件</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">用品</a>
+                    </div>
+                    <div class="category">
+                        <a href="">家纺</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">家饰</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">鲜花</a>
+                    </div>
+                    <div class="category">
+                        <a href="">医药保健</a>
+                    </div>
+                    <div class="category">
+                        <a href="">厨具</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">收纳</a>
+                        <div class="categoryContent">/</div>
+                        <a href="">宠物</a>
+                    </div>
+                    <div class="category">
+                        <a href="">图书音像</a>
+                    </div>
+                </div>
+            </div>
+            <div class="MainBody">
+                <div class="lunbo">
+                    <div class="swiper">
+                        <input type="radio" name="btn" id="btn1" checked />
+                        <input type="radio" name="btn" id="btn2" />
+                        <input type="radio" name="btn" id="btn3" />
+                        <input type="radio" name="btn" id="btn4" />
+                        <input type="radio" name="btn" id="btn5" />
+                        <label for="btn1"></label>
+                        <label for="btn2"></label>
+                        <label for="btn3"></label>
+                        <label for="btn4"></label>
+                        <label for="btn5"></label>
+                        <ul>
+                            <li><img src="./upload/lunbo1.webp" alt="" style="width: 550px; height: 260px;"></li>
+                            <li><img src="./upload/lunbo2.jpg" alt=""  style="width: 550px; height: 260px;"></li>
+                            <li><img src="./upload/lunbo3.webp" alt="" style="width: 550px; height: 260px;"></li>
+                            <li><img src="./upload/lunbo4.jpg" alt=""  style="width: 550px; height: 260px;"></li>
+                            <li><img src="./upload/lunbo5.webp" alt="" style="width: 550px; height: 260px;"></li>
+                        </ul>
+                        <a href="" class="prev"> &lt; </a>
+                        <a href="" class="next"> &gt; </a>
+                    </div>
+                    <div class="swiper1">
+                        <div class="warp">
+                            <div class="warpleft"> <a><img src="./upload/swiper1.webp"  alt="" style="width: 272px; height:180px;"></a></div>
+                            <div class="warpright"><a><img src="./upload/swiper2.webp"  alt="" style="width: 272px; height:180px;"></a></div>
+                            <div class="warpleft"> <a><img src="./upload/swiper3.webp"  alt="" style="width: 272px; height:180px;"></a></div>
+                            <div class="warpright"><a><img src="./upload/swiper4.webp"  alt="" style="width: 272px; height:180px;"></a></div>
+                            <div class="warpleft"> <a><img src="./upload/swiper5.webpp" alt="" style="width: 272px; height:180px;"></a></div>
+                            <div class="warpright"><a><img src="./upload/swiper6.webp" alt="" style="width: 272px; height:180px;"></a></div>
+                            <div class="warpleft"> <a><img src="./upload/swiper7.webp" alt="" style="width: 272px; height:180px;"></a></div>
+                            <div class="warpright"><a><img src="./upload/swiper8.webp" alt="" style="width: 272px; height:180px;"></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user">
+                    <div class="headportrait">
+                        <a><br><img src="./images/user1.jpg" alt="" style="border-radius: 50%;"></br><span>Hi!你好</span></a>
+                    </div>
+                    <div class="newsbt">
+                        <a><img src="./images/banner1.webp" alt=""></a>
+                    </div>
+                    <div class="newsbanner">
+                        <img src="./upload/banner1.webp" alt="" style="border-radius: 15px;">
+                    </div>
+                    <div class="newsbb">
+                        <h3>公告<span>新鲜事儿都在这里~</span></h3>
+                        <a><p>设计创享家3D设计服务大赛来袭！</p></a>
+                        <a><p>全球新发现，好物开抢就现在！</p></a>
+                        <a><p>万款新品流行速递抢先看</p></a>
+                    </div>
+                    <div class="userrecord">
+                        <div class="record" >
+                            <a href="" ><img src="./images/收藏.png" width="20px" height="20px"><h1>收藏的宝贝</h1></a>
+                        </div>
+                        <div class="record" >
+                            <a href="" ><img src="./images/商铺.png" width="20px" height="20px"><h1>买过的店铺</h1></a>
+                        </div>
+                        <div class="record" >
+                            <a href="" ><img src="./images/喜欢.png" width="20px" height="20px"><h1>收藏的店铺</h1></a>
+                        </div>
+                        <div class="record" >
+                            <a href="" ><img src="./images/足迹.png" width="20px" height="20px"><h1>我的足迹</h1></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tmallshop">
+        <div class="w">
+            <div class="blank">
+                <img data-lazy-src="./images/tmallshops.webp" alt="" style="width: 107px; height: 34px;">
+            </div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity1.jpg" alt=""><div class="name">全棉时代洗脸巾擦脸巾平纹洁面巾纯棉棉柔巾家用100抽*1包洗面巾</div><div class="price">￥ 29.9</div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity2.jpg" alt=""><div class="name">【单品包邮】南极人纯棉抗菌透气内裤男士平角裤大码四角裤底裤衩</div><div class="price">￥ 29.9</div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity3.jpg" alt=""><div class="name">【现做现发】轩妈家蛋黄酥红豆味55g*6枚早餐糕点休闲零食礼盒</div><div class="price">￥ 15.9</div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity4.jpg" alt=""><div class="name">宠物一次性毛巾小狗狗浴巾超强吸水速干猫咪洗澡专用泰迪擦干神器</div><div class="price">￥ 7.3</div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity5.jpg" alt=""><div class="name">德佑75度酒精消毒湿巾小包便携式儿童专用随身装湿纸巾10片20包</div><div class="price">￥ 11.14</div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity6.jpg" alt=""><div class="name">潘婷氨基酸丝质顺滑洗发水洗发露洗头膏750g修护毛躁柔顺滋润</div><div class="price">￥ 39.5</div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity7.jpg" alt=""><div class="name">我爸爸我妈妈绘本全2册0-6岁启发精装启蒙绘本幼儿园儿童书儿童</div><div class="price">￥ 19.9</div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity8.jpg" alt=""><div class="name">名创优品双头棉棒清洁棉签800支婴儿掏耳朵化妆眼唇卸妆棉棒袋装</div><div class="price">￥ 9</div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity9.jpg" alt=""><div class="name">家得宝海豚裤拉拉裤XXL58片超薄透气男女婴儿尿不湿纸尿裤拉拉裤</div><div class="price">￥ 62</div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity10.jpg" alt=""><div class="name">爱格家用平板拖把2021新款免手洗懒人干湿两用布一拖净地神器拖布</div><div class="price">￥ 39</div></a></div>
+            <div class="blank">
+                <img data-lazy-src="./images/tmallnationals.webp" alt="" style="width: 107px; height: 34px;">
+            </div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/tmallnational1.webp" alt="" style="width: 220px;height: 345px;"><div class="lable"><div class="lablel">进口<br>精选</div><div class="labler"><h3>大牌好货</h3><h2>轻松购</h2></div></div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity2.jpg" alt=""></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity3.jpg" alt=""></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity4.jpg" alt=""></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity5.jpg" alt=""></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/tmallnational6.webp" alt="" style="width: 220px;height: 345px;"><div class="lable"><div class="lablel">直营<br>品质</div><div class="labler"><h3>放心体验</h3><h2>畅享全</h2></div></div></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity7.jpg" alt=""></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity8.jpg" alt=""></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity9.jpg" alt=""></a></div>
+            <div class="commodity"><a href=""><img data-lazy-src="./upload/commodity10.jpg" alt=""></a></div>
+        </div>
+    </div>
+    <div class="tmallfooter">
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <a href="https://pages.tmall.com/wow/seller/act/newpinzhibaozhang?spm=875.7931836.0.0.66144265OGD4Ja"><img src="./images/you.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./images/you.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./images/you.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./images/you.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">免费注册</a></dd>
+                    <dd><a href="">开通支付宝</a></dd>
+                    <dd><a href="">支付宝充值</a></dd>
+                </dl>
+                <dl>
+                    <dt>天猫保障</dt>
+                    <dd><a href="">发票保障</a></dd>
+                    <dd><a href="">售后规则</a></dd>
+                    <dd><a href="">物流时效保障</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="">快捷支付</a></dd>
+                    <dd><a href="">信用卡</a></dd>
+                    <dd><a href="">余额宝</a></dd>
+                    <dd><a href="">蚂蚁花呗</a></dd>
+                    <dd><a href="">货到付款</a></dd>
+                </dl>
+                <dl>
+                    <dt>商家服务</dt>
+                    <dd><a href="">天猫规则</a></dd>
+                    <dd><a href="">商家入驻</a></dd>
+                    <dd><a href="">商家中心</a></dd>
+                    <dd><a href="">天猫必修课</a></dd>
+                    <dd><a href="">喵言喵语</a></dd>
+                    <dd><a href="">运营服务</a></dd>
+                </dl>
+                <dl>
+                    <dt>手机天猫</dt>
+                    <dd><a href="https://www.tmall.com/wow/portal/act/app-download"><img src="./images/QRcode.png" alt=""></a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="w">
+            <div class="blackcat"><img src="./images/天猫形象.png" alt="" style="height: 40px; width: 70px;"></div>
+        </div>
+        <div class="mod_copyright">
+            <div class="w">
+                <div class="tmallinfo">
+                    <span><a>关于天猫</a></span>
+                    <span><a>商家服务大厅</a></span>
+                    <span><a>开放平台</a></span>
+                    <span><a>诚聘英才</a></span>
+                    <span><a>联系我们</a></span>
+                    <span><a>网站合作</a></span>
+                    <span><a>法律声明</a></span>
+                    <span><a>隐私权政策</a></span>
+                    <span><a>知识产权</a></span>
+                    <span><a>廉正举报</a></span>
+                    <span><a>不当竞争举报</a></span>
+                </div>
+                <div class="otherlink">
+                    <span><a>阿里巴巴集团</a></span>
+                    <b>|</b>
+                    <span><a>淘宝网</a></span>
+                    <b>|</b>
+                    <span><a>天猫</a></span>
+                    <b>|</b>
+                    <span><a>聚划算</a></span>
+                    <b>|</b>
+                    <span><a>全球速卖通</a></span>
+                    <b>|</b>
+                    <span><a>阿里巴巴国际交易市场</a></span>
+                    <b>|</b>
+                    <span><a>1688</a></span>
+                    <b>|</b>
+                    <span><a>阿里妈妈</a></span>
+                    <b>|</b>
+                    <span><a>飞猪</a></span>
+                    <b>|</b>
+                    <span><a>阿里云计算</a></span>
+                    <b>|</b>
+                    <span><a>AliOS</a></span>
+                    <b>|</b>
+                    <span><a>阿里通信</a></span>
+                    <b>|</b>
+                    <span><a>万网</a></span>
+                    <b>|</b>
+                    <span><a>高德</a></span>
+                    <b>|</b>
+                    <span><a>UC</a></span>
+                    <b>|</b>
+                    <span><a>友盟</a></span>
+                    <b>|</b>
+                    <span><a>虾米</a></span>
+                    <b>|</b>
+                    <span><a>钉钉</a></span>
+                    <b>|</b>
+                    <span><a>支付宝</a></span>
+                    <b>|</b>
+                    <span><a>阿里安全</a></span>
+                </div>
+                <div class="copyright">
+                    <span><a href="">增值电信业务经营许可证：浙B2-20110446</a></span>
+                    <span>市场名称登记证：工商网市字3301004119号</span>
+                    <span>出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</span>
+                    <br/>
+                    <span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+                    <span> 互联网药品信息服务资质证书编号：<a href="#"> 浙-（经营性）-2017-0005</a></span>
+                    <span><label><a href=""><img src="./images/zgwab.png" width="20px" height="20px"></a></label><a href="#">浙公网安备 33010002000120号</a></span>
+                    <br/>
+                    <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+                    <span>网络文化经营许可证：浙网文 [2021]1668-073号<label><a href=""><img src="./images/xvkezheng.gif" width="35px" height="35px"></a></label></span>
+                    <br/>
+                    <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+                    <span><a href="#">12318举报</a></span>
+                    <span><a href="#">浙B2-20110446-1</a></span>
+                    <br/>
+                    <span id="pic">© 2003-现在 TMALL.COM 版权所有</span>
+                </div>
+            </div>
+        </div>
+        <div class="w">
+        <div class="laster"><img src="./images/footerchair.png" alt=""></div>
+        </div>
+    </footer>
+    <script src="./js/EasyLazyload.min.js"></script>
+    <script>
+        lazyLoadInit({
+            showTime:1100,
+            onLoadBackEnd:function(i,e){
+                console.log("onLoadBackEnd:"+i);
+            }
+            ,onLoadBackStart:function(i,e){
+                console.log("onLoadBackStart:"+i);
+            }
+        });
+    </script>
+
+
+    <script type="text/html" id="tpl-suggestList">
+        {{each result}}
+            <div class="suggest-item">{{$value[0]}}</div>
+        {{/each}}
+    </script>
+
+
+    <script>
+        //搜索关键词
+        $(function(){
+            var timer = null;
+            var cacheObj = []
+
+            function debounceSearch(kw){
+                timer = setTimeout(function(){
+                    getSuggestList(kw)
+                },500)
+            }
+
+            $('#ipt').on('keyup',function(){
+                clearTimeout(timer)
+                var keywords = $(this).val().trim()
+                if (keywords.length <= 0){
+                    return $('#suggest-list').empty().hide()
+                }
+
+                if(cacheObj[keywords]){
+                    return renderSuggestList(cacheObj[keywords])
+                }
+                // console.log(keywords);
+                // getSuggestList(keywords)
+                debounceSearch(keywords)
+
+            })
+
+            function getSuggestList(kw){
+                $.ajax({
+                    url:'http://suggest.taobao.com/sug?q='+kw,
+                    dataType:'jsonp',
+                    success:function(res){
+                        console.log(res)
+                        renderSuggestList(res)
+                    }
+                })
+            }
+
+            //渲染UI结构
+            function renderSuggestList(res){
+                if(res.result.length <= 0){
+                    return $('#suggest-list').empty().hide()
+                }
+                var htmlStr = template('tpl-suggestList',res)
+                $('#suggest-list').html(htmlStr).show()
+
+                var k = $('#ipt').val().trim()
+                cacheObj[k] = res
+            }
+        })
+
+    </script>
+</body>
+</html>

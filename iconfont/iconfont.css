@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1647524362485') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-daifukuan:before {
+  content: "\ee8d";
+}
+
+.icon-daifahuo:before {
+  content: "\ee8e";
+}
+
+.icon-daishouhuo:before {
+  content: "\ee8f";
+}
+
+.icon-dingdan:before {
+  content: "\ee91";
+}
+
+.icon-dizhi:before {
+  content: "\ee96";
+}
+
+.icon-shangpu:before {
+  content: "\ee9a";
+}
+
+.icon-xihuan:before {
+  content: "\eea1";
+}
+
+.icon-zuji:before {
+  content: "\eea2";
+}
+
+.icon-gouwu:before {
+  content: "\eead";
+}
+
+.icon-kefu1:before {
+  content: "\eeb4";
+}
+
+.icon-gouwuche:before {
+  content: "\eeba";
+}
+
+.icon-fenxiang:before {
+  content: "\eed3";
+}
+
+.icon-shuma:before {
+  content: "\f816";
+}
+
+.icon-dianpu:before {
+  content: "\f837";
+}
+
+.icon-gouwuche1:before {
+  content: "\f84a";
+}
+
+.icon-shouye:before {
+  content: "\100a6";
+}
+
+.icon-shanchu:before {
+  content: "\100a7";
+}
+
+.icon-shoucang:before {
+  content: "\ee99";
+}
+
+.icon-gaishuai:before {
+  content: "\eea4";
+}
+
+.icon-fenxiang:before {
+  content: "\eed3";
+}
